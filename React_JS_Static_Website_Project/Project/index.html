@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A small New Zealand based business which produces cloaks capes skirts shorts and other bespoke clothing by consultation">
+    <title>The Renegade Seamsmith</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-main.css" type="text/css" media="all">
+	<style>@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');</style> 
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script src="js/slideshow-script.js" defer></script>
+</head>
+
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <img class="logo" href="RSLogo.svg" src="images/icons/RSLogo.svg" alt="the Renegade Seamsmith logo sewing macine foot pedal" />
+		<h1 class="site-title">The Renegade Seamsmith</h1>
+			
+		<div class="topnav" id="myTopnav">
+			<a title="Home" class="active" href="index.html">Home</a>
+			<a title="Gallery" href="gallery.html" aria-haspopup="true">Gallery</a>
+			<a title="Contact" href="contact.html">Contact</a>
+			<a title="Terms" href="terms.html" aria-haspopup="true">Terms</a>
+			<a title="Social" href="social.html">Social</a>
+			<a href="javascript:void(0);" class="icon" onclick="navFunction()">
+					<img class="menuicon" href="menu-icon.svg" src="images/icons/menu-icon.svg"  alt="navigation bar icon for dropdown" />
+			</a>			
+		</div>
+
+		</header>
+			
+   <main id="content" class="main-area">
+			<div class="slideshow-container">
+			
+			<div class="mySlides fade">
+				<img src="images/Skirts/Skirt1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="images/Cape1/Cape1Front.jpg" style="width:100%">			
+			</div>
+
+			<div class="mySlides fade">
+				<img src="images/Cloak1/Cloak1Front.jpg" style="width:100%">
+			</div>
+
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<div id="like"></div>	
+			
+			</div>
+		
+		<section class="splash">
+			<div class="splash-content">
+				<h2 class="content-title">Our Story</h2>
+				<div class="splash-text">
+					<p>The Renegade Seamsmith began with the creation of a single cape, and has since moved onto cloaks, skirts, 
+					shorts, and other embriodery projects. Based in Wellington New Zealand the artist has since delivered over 
+					20 garments and clothing items to customers and friends. Spread the word and link to our page or find us on 
+					other social media platforms in the 
+					<a onmouseover="style.color='pink'" onmouseout="style.color='blue'" href="pages/social/social.html">Social</a> 
+					area of our site.</p>
+				</div>
+			</div>
+		</section>
+	
+		<section class="buckets">
+			<h2 class="bucket-title">Featured Products</h3>
+			<ul>
+				<li>
+					<div class="bucket">
+						<h3 class="bucket-title">First Creation</h3>
+						<p>This is the first cape ever made by the Renegade Seamsmith in 2018, it took over 80hours of beading and and detail work. The whole garment is hand sewn.</p>
+					</div>
+					<img id="bucket1" src="images/Story/FirstEverCape.jpg" alt="A green cape with intricate bead-work.">					
+				</li>
+				<li>
+					<div class="bucket">
+						<h3 class="bucket-title">Recent Creation</h3>
+						<p>This is the most recently completed item, completed in early 2019 it is a bespoke order Cloak, with pattern lining in the body and hood, perfect for fancy dinners.</p>
+					</div>
+					<img id="bucket2" src="images/Cloak1/Cloak1Front.jpg" alt="A blue cloak with gold trim, and a hood.">					
+				</li>
+			</ul>
+		</section>
+	</main>	
+    <footer class="colophon">
+		<aside>All photos: <a href="https://www.linkedin.com/in/james-laccohee-fearnley">James Laccohee Fearnley</a>.</aside>
+    </footer>
+
+		<script src="js/like-react.js" type="text/babel">				 
+		</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=devalice-width, initial-scale=1">
+	<meta name="description" content="Contact A small New Zealand based business which produces cloaks capes skirts shorts and other bespoke clothing here">
+    <title>RS Contact Form</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact-style.css" type="text/css" media="all">
+	<style>@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');</style> 
+</head>
+<body>
+	    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <img class="logo" href="RSLogo.svg" src="images/icons/RSLogo.svg" alt="the Renegade Seamsmith logo sewing macine foot pedal" />
+        <h1 class="site-title">The Renegade Seamsmith</h2>
+			
+		<div class="topnav" id="myTopnav">
+			<a title="Home" class="active" href="index.html">Home</a>
+			<a title="Gallery" href="gallery.html" aria-haspopup="true">Gallery</a>
+			<a title="Contact" href="contact.html">Contact</a>
+			<a title="Terms" href="terms.html" aria-haspopup="true">Terms</a>
+			<a title="Social" href="social.html">Social</a>
+			<a href="javascript:void(0);" class="icon" onclick="navFunction()">
+				<img class="menuicon" href="menu-icon.svg" src="images/icons/menu-icon.svg" alt="navigation bar icon for dropdown" />
+			</a>			
+		</div>
+	</header>
+
+	<div class="full-form">
+	
+		<h1>Contact Form</h1>
+		
+		<p>* Required Fields</p>
+		
+		<form id="form-user" action="thankyou.html" method="post">
+			<div class="form-box" data-errormsg="">
+				<label for="input-name">Name *</label>
+				<input type="text" id="input-name" autofocus placeholder="Name" tabindex="1"/>
+			</div>
+			<div class="form-box" data-errormsg="">
+				<label for="input-email">E-mail *</label>
+				<input type="email" id="input-email" required placeholder="E-mail Address" tabindex="3" />
+			</div>
+			<div class="form-box" data-errormsg="">
+				<label for="input-subject">Subject *</label>
+				<select id="input-subject" tabindex="4">
+					<option value="0">Select Below</option>
+					<option value="1">Cloak Consultation</option>
+					<option value="2">Cape Consultation</option>
+					<option value="3">Repairs and Adjustments</option>
+					<option value="4">Enquire to purchase</option>
+					<option value="5">Other</option>
+				</select>
+			</div>
+			<div class="form-box" data-errormsg="">
+				<label for="input-notes">Notes</label>
+				<input type="notes" id="input-notes" placeholder="Enter notes here" tabindex="3" />
+			</div>
+		   <div class="form-box" data-errormsg="">
+				<label for="input-robot">I am not a robot? *</label>
+				<input type="checkbox" id="input-robot" value="yes" tabindex="5" />
+			</div>		
+			<div class="form-box">
+				<button id="button-cancel">Cancel</button>
+				<button id="button-send">Send</button>
+			</div>
+		</form>
+		
+		<script src="js/contact-script.js"></script>
+		
+	</div>
+	
+</body>
+</html>
